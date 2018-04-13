@@ -18,7 +18,8 @@ fs.writeFileSync(path.join(__dirname, 'dist/vv-ckform.js'), component, 'utf8')
 var params = {
   Bucket: 'vincuventas',
   Key: `vv-ckform-${uuidv4().toString('utf8')}.js`,
-  Body: component
+  Body: component,
+  ACL: 'public-read'
 }
 var options = { partSize: 10 * 1024 * 1024, queueSize: 1 }
 // # upload component to s3

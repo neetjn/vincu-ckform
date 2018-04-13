@@ -1,0 +1,19 @@
+{
+  "name": "wp-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/riot src/vv-ckform.tag dist/vv-ckform.js",
+    "generate": "node generator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.224.1",
+    "handlebars": "^4.0.11",
+    "riot": "^3.9.1",
+    "uuid": "^3.2.1"
+  }
+}
